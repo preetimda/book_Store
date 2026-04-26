@@ -1,0 +1,1064 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Cormorant+Garamond:wght@400;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050303;color:#fff;font-family:'Cormorant Garamond',serif}
+.hero{min-height:100vh;padding:20px 4%;background:radial-gradient(circle at 75% 40%,rgba(155,85,20,.35),transparent 28%),#050303;position:relative;overflow:hidden}
+.navbar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-family:'Great Vibes',cursive;color:#fff;font-size:3rem}.logo span{display:block;font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:2px;color:#c9a15b}
+nav{display:flex;gap:28px;flex-wrap:wrap}nav a{text-decoration:none;color:#fff;font-family:'Cinzel',serif;font-size:1rem}.active{color:#d4a24d;border-bottom:2px solid #d4a24d;padding-bottom:6px}
+.order-btn,.read-btn{border:1px solid #d4a24d;padding:14px 22px;text-decoration:none;color:#f6d18d;font-family:'Cinzel',serif;border-radius:4px}
+.hero-content{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding-top:40px}.left h2{font-family:'Cinzel',serif;font-size:4rem;line-height:1.15}.left h1{font-family:'Great Vibes',cursive;font-size:7rem;color:#c69245;line-height:.95;margin:15px 0}.left p{font-size:2rem;color:#ddd;margin:25px 0}.read-btn{display:inline-block;background:#6e1b12}.right img{max-width:100%;width:520px;filter:drop-shadow(0 20px 35px rgba(0,0,0,.7));animation:float 4s ease-in-out infinite}.scroll{text-align:center;color:#d4a24d;font-family:'Cinzel',serif;padding-top:20px;letter-spacing:2px}@keyframes float{50%{transform:translateY(-10px)}}
+@media(max-width:992px){.hero-content{grid-template-columns:1fr;text-align:center}.left h2{font-size:2.5rem}.left h1{font-size:4.8rem}.left p{font-size:1.4rem}.navbar,nav{justify-content:center}.logo{text-align:center}.right img{width:320px;margin:auto}}
+
+html{
+  scroll-behavior:smooth;
+} 
+.author-section{padding:80px 4%;background:#040202}.section-title{text-align:center;color:#d4a24d;font-family:'Cinzel',serif;font-size:2rem;letter-spacing:3px;margin-bottom:40px}.author-grid{display:grid;grid-template-columns:1.1fr .8fr 1fr;gap:28px;align-items:center}.note-card,.bio-card{background:rgba(255,248,230,.92);color:#1f140c;padding:35px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.35)}.bio-card{background:rgba(10,7,6,.9);color:#fff;border:1px solid rgba(212,162,77,.35)}.mini-top{font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:2px;color:#c59a4d;margin-bottom:12px}.note-card h2{font-family:'Great Vibes',cursive;font-size:4.2rem;line-height:1.1;font-weight:400}.small-note,.bio-card p{font-size:1.4rem;line-height:1.5;margin-top:18px}.bio-card h3{font-family:'Great Vibes',cursive;font-size:4rem;color:#d4a24d;font-weight:400}.bio-card strong{display:block;margin-top:18px;color:#d4a24d;font-size:1.6rem}.author-photo-wrap{padding:12px;background:#d9bf95;border-radius:8px;transform:rotate(-2deg)}.author-photo-wrap img{width:100%;display:block;border-radius:4px;min-height:520px;object-fit:cover}.journey-row{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:45px}.journey-row div{border-top:1px solid rgba(212,162,77,.25);padding-top:18px}.journey-row span{display:block;color:#d4a24d;font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:10px}.journey-row p{font-size:1.15rem;color:#ddd;line-height:1.45}@media(max-width:1100px){.author-grid{grid-template-columns:1fr}.journey-row{grid-template-columns:1fr 1fr}.note-card h2,.bio-card h3{font-size:3rem}}@media(max-width:700px){.journey-row{grid-template-columns:1fr}.small-note,.bio-card p,.journey-row p{font-size:1rem}}
+.author-section{padding:80px 4%;background:#040202}.author-grid{display:grid;grid-template-columns:1.1fr .8fr 1fr;gap:28px;align-items:center}.note-card,.bio-card{background:rgba(255,248,230,.92);color:#1f140c;padding:35px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.35)}.bio-card{background:rgba(10,7,6,.9);color:#fff;border:1px solid rgba(212,162,77,.35)}.mini-top{font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:2px;color:#c59a4d;margin-bottom:12px}.note-card h2{font-family:'Great Vibes',cursive;font-size:4.2rem;line-height:1.1;font-weight:400}.small-note,.bio-card p{font-size:1.4rem;line-height:1.5;margin-top:18px}.bio-card h3{font-family:'Great Vibes',cursive;font-size:4rem;color:#d4a24d;font-weight:400}.bio-card strong{display:block;margin-top:18px;color:#d4a24d;font-size:1.6rem}.author-photo-wrap{padding:12px;background:#d9bf95;border-radius:8px;transform:rotate(-2deg)}.author-photo-wrap img{width:100%;display:block;border-radius:4px;min-height:520px;object-fit:cover}.journey-row{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:45px}.journey-row div{border-top:1px solid rgba(212,162,77,.25);padding-top:18px}.journey-row span{display:block;color:#d4a24d;font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:10px}.journey-row p{font-size:1.15rem;color:#ddd;line-height:1.45}@media(max-width:1100px){.author-grid{grid-template-columns:1fr}.journey-row{grid-template-columns:1fr 1fr}.note-card h2,.bio-card h3{font-size:3rem}}@media(max-width:700px){.journey-row{grid-template-columns:1fr}.small-note,.bio-card p,.journey-row p{font-size:1rem}}
+
+.book-section{padding:90px 4%;background:#050303}.book-subtitle{text-align:center;font-family:'Great Vibes',cursive;color:#d4a24d;font-size:3rem}.book-desc{text-align:center;max-width:900px;margin:10px auto 40px;font-size:1.6rem;color:#ddd}.book-grid{display:grid;grid-template-columns:.8fr 1.2fr .9fr;gap:26px;align-items:start}.book-cover-card img{width:100%;max-width:330px;display:block;margin:auto;filter:drop-shadow(0 20px 35px rgba(0,0,0,.7))}.paper-quote{background:#8a6845;color:#1d130b;padding:18px;border-radius:8px;margin-top:18px;font-size:1.2rem}.video-main,.video-bts{background:rgba(255,255,255,.02);border:1px solid rgba(212,162,77,.25);padding:18px;border-radius:10px}.video-main h4,.video-bts h4{color:#d4a24d;font-family:'Cinzel',serif;margin-bottom:12px;font-size:1.2rem}.video-main video,.video-bts video{width:100%;border-radius:8px;background:#000}.feature-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:35px}.feature-row div{border:1px solid rgba(212,162,77,.2);padding:22px;border-radius:10px}.feature-row span{display:block;color:#d4a24d;font-family:'Cinzel',serif;margin-bottom:10px}.feature-row p{font-size:1.2rem;color:#eee;line-height:1.45}.quote-box{display:flex;align-items:center;justify-content:center;background:rgba(10,7,6,.9)}@media(max-width:1100px){.book-grid,.feature-row{grid-template-columns:1fr}.book-cover-card img{max-width:260px}.book-subtitle{font-size:2.4rem}.book-desc{font-size:1.2rem}}
+
+.buy-section{padding:90px 4%;background:#040202}.buy-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.buy-left img{width:75%;max-width:260px;display:block;margin:auto}.special-box,.buy-right{border:1px solid rgba(212,162,77,.25);padding:24px;border-radius:12px;background:rgba(255,255,255,.02);margin-top:20px}.special-box h4{color:#d4a24d;font-family:'Cinzel',serif;margin-bottom:14px}.special-box ul{padding-left:18px}.special-box li{margin:10px 0;font-size:1.1rem;color:#eee}.buy-right label{display:block;margin:14px 0 6px;color:#d4a24d}.buy-right input,.buy-right textarea{width:100%;padding:14px;background:#0d0a09;border:1px solid rgba(212,162,77,.25);color:#fff;border-radius:8px}.price-line{display:flex;justify-content:space-between;align-items:center;margin:20px 0;font-size:1.4rem}.pay-btn{width:100%;padding:16px;border:none;background:#c79a4b;color:#111;font-family:'Cinzel',serif;font-size:1.2rem;border-radius:8px;cursor:pointer}@media(max-width:900px){.buy-grid{grid-template-columns:1fr}}
+
+.review-section{padding:90px 4%;background:#040202 url('images/review-bg.jpg') center/cover no-repeat;position:relative}.review-section:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.58)}.review-section>*{position:relative;z-index:1}.review-wrap{max-width:760px;margin:30px auto 0}.review-form-card{background:rgba(245,227,194,.92);padding:30px;border-radius:10px;color:#1d130b}.review-form-card h3{font-family:'Great Vibes',cursive;font-size:3.2rem;text-align:center;font-weight:400}.review-form-card p{text-align:center;font-size:1.3rem;margin-bottom:18px}.review-form-card textarea,.review-form-card input,.review-form-card select{width:100%;padding:14px;margin:10px 0;border:1px solid #c7aa7c;background:#fff8ef;border-radius:8px}.review-form-card textarea{min-height:180px;resize:vertical}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.two-col{grid-template-columns:1fr}.review-form-card h3{font-size:2.3rem}}
+
+/* REVIEW SECTION CSS */
+.review-section{
+  padding:90px 4%;
+  background:#040202 url('images/review-bg.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.review-section::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.58);
+}
+
+.review-section *{
+  position:relative;
+  z-index:1;
+}
+
+.section-title{
+  text-align:center;
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+  font-size:2rem;
+  letter-spacing:3px;
+  margin-bottom:10px;
+}
+
+.book-subtitle{
+  text-align:center;
+  font-family:'Great Vibes', cursive;
+  color:#d4a24d;
+  font-size:3rem;
+  margin-bottom:25px;
+}
+
+.review-wrap{
+  max-width:760px;
+  margin:0 auto;
+}
+
+.review-form-card{
+  background:rgba(245,227,194,.94);
+  padding:30px;
+  border-radius:12px;
+  color:#1d130b;
+  box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.review-form-card h3{
+  font-family:'Great Vibes', cursive;
+  font-size:3rem;
+  text-align:center;
+  font-weight:400;
+  margin-bottom:10px;
+}
+
+.review-form-card p{
+  text-align:center;
+  font-size:1.25rem;
+  margin-bottom:18px;
+}
+
+.review-form-card textarea,
+.review-form-card input,
+.review-form-card select{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:1px solid #c7aa7c;
+  background:#fff8ef;
+  border-radius:8px;
+  font-size:1rem;
+}
+
+.review-form-card textarea{
+  min-height:180px;
+  resize:vertical;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.pay-btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  background:#7b1d10;
+  color:#fff;
+  font-size:1.1rem;
+  border-radius:8px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.pay-btn:hover{
+  background:#5f140b;
+}
+
+@media(max-width:700px){
+  .two-col{
+    grid-template-columns:1fr;
+  }
+
+  .review-form-card h3{
+    font-size:2.2rem;
+  }
+
+  .book-subtitle{
+    font-size:2.2rem;
+  }
+}
+
+/* CONTACT SECTION CSS */
+.contact-section{
+  padding:90px 4%;
+  background:#040202 url('images/contact-bg.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.contact-section::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.58);
+}
+
+.contact-section *{
+  position:relative;
+  z-index:1;
+}
+
+.contact-title{
+  text-align:center;
+  font-family:'Cinzel', serif;
+  font-size:4rem;
+  color:#fff;
+  margin-bottom:5px;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  margin-top:30px;
+}
+
+.contact-text{
+  font-size:1.35rem;
+  color:#eee;
+  line-height:1.6;
+  margin-bottom:25px;
+}
+
+.connect-box,
+.message-box,
+.quote-card{
+  border:1px solid rgba(212,162,77,.25);
+  padding:25px;
+  border-radius:12px;
+  background:rgba(255,255,255,.02);
+  margin-top:20px;
+}
+
+.connect-box h3,
+.message-box h3{
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+  margin-bottom:16px;
+}
+
+.social-item{
+  margin:18px 0;
+  color:#fff;
+  font-size:1.1rem;
+}
+
+.social-item a{
+  color:#d4a24d;
+  text-decoration:none;
+}
+
+.message-box input,
+.message-box textarea{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border:1px solid rgba(212,162,77,.25);
+  background:#0d0a09;
+  color:#fff;
+  border-radius:8px;
+}
+
+.message-box textarea{
+  min-height:180px;
+}
+
+
+
+.photo-frame img{
+  width:75%;
+  display:block;
+  border-radius:6px;
+}
+
+.quote-card{
+  text-align:center;
+  color:#d4a24d;
+  font-family:'Great Vibes', cursive;
+  font-size:2.2rem;
+}
+
+@media(max-width:900px){
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-title{
+    font-size:2.7rem;
+  }
+
+  .quote-card{
+    font-size:1.8rem;
+  }
+}
+
+/* Decorative background styling */
+.hero,
+.buy-section,
+.review-section,
+.contact-section{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left candle */
+.hero::after,
+.buy-section::after,
+.review-section::after,
+.contact-section::after{
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 220px;
+  left: 20px;
+  bottom: 30px;
+  background: url() center/contain no-repeat;
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Top flowers */
+.hero::before,
+.buy-section::before,
+.review-section::before,
+.contact-section::before{
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 220px;
+  top: 10px;
+  left: 0;
+  background: url('images/flowers.png') left top/contain no-repeat;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Keep content above decorations */
+.hero > *,
+.buy-section > *,
+.review-section > *,
+.contact-section > *{
+  position: relative;
+  z-index: 1;
+}
+
+@media(max-width:768px){
+  .hero::after,
+  .buy-section::after,
+  .review-section::after,
+  .contact-section::after{
+    width: 110px;
+    height: 140px;
+    left: 8px;
+    bottom: 10px;
+    opacity: 0.55;
+  }
+
+  .hero::before,
+  .buy-section::before,
+  .review-section::before,
+  .contact-section::before{
+    width: 140px;
+    height: 120px;
+    opacity: 0.3;
+  }
+}
+
+.special-box{
+  border:1px solid rgba(212,162,77,.25);
+  padding:22px;
+  border-radius:12px;
+  background:rgba(255,255,255,.02);
+  margin-top:20px;
+}
+
+.special-box h4{
+  text-align:center;
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+  font-size:1.2rem;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+.special-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  border-top:1px solid rgba(212,162,77,.15);
+}
+
+.special-item{
+  text-align:center;
+  padding:18px 12px;
+  border-right:1px solid rgba(212,162,77,.15);
+}
+
+.special-item:last-child{
+  border-right:none;
+}
+
+.special-item .icon{
+  font-size:2rem;
+  color:#d4a24d;
+  margin-bottom:10px;
+}
+
+.special-item p{
+  color:#eee;
+  font-size:1rem;
+  line-height:1.5;
+  min-height:52px;
+}
+
+.special-item span{
+  display:block;
+  color:#d4a24d;
+  margin-top:8px;
+}
+
+@media(max-width:900px){
+  .special-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .special-item:nth-child(2){
+    border-right:none;
+  }
+
+  .special-item:nth-child(1),
+  .special-item:nth-child(2){
+    border-bottom:1px solid rgba(212,162,77,.15);
+  }
+}
+
+@media(max-width:560px){
+  .special-grid{
+    grid-template-columns:1fr;
+  }
+
+  .special-item{
+    border-right:none;
+    border-bottom:1px solid rgba(212,162,77,.15);
+  }
+
+  .special-item:last-child{
+    border-bottom:none;
+  }
+}
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-family:'Cinzel', serif;
+  font-size:1rem;
+  letter-spacing:1px;
+  transition:0.3s ease;
+}
+
+.primary-btn{
+  background:#7b1d10;
+  color:#fff;
+  border:1px solid #b97a4a;
+}
+
+.primary-btn:hover{
+  background:#5f140b;
+  transform:translateY(-2px);
+}
+
+.secondary-btn{
+background:#7b1d10;
+  color:#fff;
+  border:1px solid #b97a4a;
+}
+
+.secondary-btn:hover{
+background:#5f140b;
+  transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+  .hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+
+/* Add to sections where you want notes */
+.hero,
+.author-section,
+.book-section,
+.buy-section,
+.review-section,
+.contact-section{
+  position:relative;
+  overflow:hidden;
+}
+
+/* Musical notes layer */
+.hero .music-notes,
+.author-section .music-notes,
+.book-section .music-notes,
+.buy-section .music-notes,
+.review-section .music-notes,
+.contact-section .music-notes{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Individual notes */
+.note{
+  position:absolute;
+  color:rgba(212,162,77,.55);
+  font-size:22px;
+  animation:floatNote 6s ease-in-out infinite;
+  text-shadow:0 0 8px rgba(212,162,77,.25);
+}
+
+.note:nth-child(2){font-size:16px;animation-delay:1s;}
+.note:nth-child(3){font-size:28px;animation-delay:2s;}
+.note:nth-child(4){font-size:18px;animation-delay:3s;}
+.note:nth-child(5){font-size:24px;animation-delay:4s;}
+.note:nth-child(6){font-size:14px;animation-delay:5s;}
+
+@keyframes floatNote{
+  0%,100%{transform:translateY(0) rotate(0deg);opacity:.45;}
+  50%{transform:translateY(-8px) rotate(6deg);opacity:.8;}
+}
+
+/* Keep content above notes */
+.hero > *:not(.music-notes),
+.author-section > *:not(.music-notes),
+.book-section > *:not(.music-notes),
+.buy-section > *:not(.music-notes),
+.review-section > *:not(.music-notes),
+.contact-section > *:not(.music-notes){
+  position:relative;
+  z-index:1;
+}
+
+/* Add to sections where you want notes */
+.hero,
+.author-section,
+.book-section,
+.buy-section,
+.review-section,
+.contact-section{
+  position:relative;
+  overflow:hidden;
+}
+
+/* Musical notes layer */
+.hero .music-notes,
+.author-section .music-notes,
+.book-section .music-notes,
+.buy-section .music-notes,
+.review-section .music-notes,
+.contact-section .music-notes{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Individual notes */
+.note{
+  position:absolute;
+  color:rgba(212,162,77,.55);
+  font-size:22px;
+  animation:floatNote 6s ease-in-out infinite;
+  text-shadow:0 0 8px rgba(212,162,77,.25);
+}
+
+.note:nth-child(2){font-size:16px;animation-delay:1s;}
+.note:nth-child(3){font-size:28px;animation-delay:2s;}
+.note:nth-child(4){font-size:18px;animation-delay:3s;}
+.note:nth-child(5){font-size:24px;animation-delay:4s;}
+.note:nth-child(6){font-size:14px;animation-delay:5s;}
+
+@keyframes floatNote{
+  0%,100%{transform:translateY(0) rotate(0deg);opacity:.45;}
+  50%{transform:translateY(-8px) rotate(6deg);opacity:.8;}
+}
+
+/* Keep content above notes */
+.hero > *:not(.music-notes),
+.author-section > *:not(.music-notes),
+.book-section > *:not(.music-notes),
+.buy-section > *:not(.music-notes),
+.review-section > *:not(.music-notes),
+.contact-section > *:not(.music-notes){
+  position:relative;
+  z-index:1;
+}
+
+.heart-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  margin:24px 0 28px;
+  color:#d4a24d;
+  font-size:1.35rem;   /* bigger heart */
+}
+
+.heart-divider span{
+  width:110px;         /* longer lines */
+  height:2px;          /* thicker line */
+  background:linear-gradient(to right, transparent, #d4a24d, transparent);
+  display:block;
+}
+
+@media(max-width:768px){
+  .heart-divider{
+    gap:12px;
+    font-size:1.1rem;
+    margin:18px 0 22px;
+  }
+
+  .heart-divider span{
+    width:70px;
+    height:2px;
+  }
+}
+
+.paper-note{
+  background:#e6d0aa;
+  color:#1e140d;
+  padding:40px 34px;
+  border-radius:2px;
+  box-shadow:0 18px 35px rgba(0,0,0,.35);
+  transform:rotate(-5deg);
+  border:1px solid rgba(120,80,40,.15);
+  position:relative;
+}
+
+.paper-top{
+  text-align:center;
+  font-family:'Cinzel', serif;
+  font-size:.95rem;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+.mini-divider{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  color:#8a5b34;
+  margin-bottom:18px;
+}
+
+.mini-divider span{
+  width:45px;
+  height:1px;
+  background:#8a5b34;
+}
+
+.paper-quote{
+  font-family:'Great Vibes', cursive;
+  font-size:4.1rem;
+  line-height:1.15;
+  text-align:center;
+  font-weight:400;
+}
+
+.paper-bottom{
+  text-align:center;
+  margin-top:24px;
+  font-size:1.25rem;
+  line-height:1.7;
+}
+
+@media(max-width:768px){
+  .paper-note{
+    transform:none;
+    padding:28px 20px;
+  }
+
+  .paper-quote{
+    font-size:2.8rem;
+  }
+
+  .paper-bottom{
+    font-size:1rem;
+  }
+}
+
+.journey-section{
+  grid-column: 1 / -1;      /* full width if inside CSS grid */
+  width: 100%;
+  max-width: 1280px;
+  margin: 50px auto 0;
+  padding: 0 30px;
+  display: block;
+}
+.journey-title{
+  text-align:center;
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+  letter-spacing:2px;
+  font-size:1.6rem;
+  margin-bottom:25px;
+}
+
+.journey-grid{
+  display:grid;
+  grid-template-columns:repeat(5, minmax(180px,1fr));
+  gap:0;
+  width:100%;
+  margin:0 auto;
+  border-top:1px solid rgba(212,162,77,.15);
+}
+
+.journey-item{
+  text-align:center;
+  padding:22px 16px;
+  border-right:1px solid rgba(212,162,77,.12);
+}
+.journey-item:last-child{
+  border-right:none;
+}
+
+.journey-item .icon{
+  font-size:2rem;
+  color:#d4a24d;
+  margin-bottom:10px;
+}
+
+.journey-item h4{
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+  margin-bottom:8px;
+  font-size:1rem;
+}
+
+.journey-item p{
+  color:#eee;
+  font-size:0.95rem;
+  line-height:1.6;
+}
+
+.torn-footer{
+  margin-top:18px;
+  background:#c9a57a;
+  color:#3a2617;
+  text-align:center;
+  padding:18px;
+  font-family:'Great Vibes', cursive;
+  font-size:2rem;
+  clip-path:polygon(0 14%, 6% 0, 12% 8%, 18% 1%, 26% 10%, 34% 2%, 42% 8%, 50% 0, 58% 7%, 66% 2%, 74% 9%, 82% 1%, 90% 8%, 100% 0, 100% 100%, 0 100%);
+}
+
+@media(max-width:1000px){
+  .journey-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:600px){
+  .journey-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+  .journey-item{
+    border-right:none;
+    border-bottom:1px solid rgba(212,162,77,.12);
+  }
+
+  .torn-footer{
+     
+    font-size:1.6rem;
+    margin-top:20px;
+  
+  }
+
+.journey-title,
+.torn-footer{
+  text-align:center;
+}
+
+.journey-quote-card{
+  margin-top:18px;
+  padding:28px 24px;
+  border:1px solid rgba(212,162,77,.28);
+  border-radius:12px;
+  background:rgba(255,255,255,.02);
+  color:#d4a24d;
+  position:relative;
+  text-align:center;
+}
+
+.quote-mark{
+  position:absolute;
+  top:12px;
+  left:18px;
+  font-size:1.8rem;
+  opacity:.8;
+}
+
+.journey-quote-card p{
+  font-family:'Great Vibes', cursive;
+  font-size:2.2rem;
+  line-height:1.45;
+  margin:8px 0 14px;
+}
+
+.quote-author{
+  color:#fff;
+  font-family:'Cinzel', serif;
+  font-size:1rem;
+  letter-spacing:1px;
+}
+
+.quote-heart{
+  position:absolute;
+  right:18px;
+  bottom:14px;
+  font-size:1.2rem;
+}
+
+@media(max-width:768px){
+  .journey-quote-card p{
+    font-size:1.6rem;
+  }
+}
+
+
+
+
+
+/* Review Layout */
+.review-wrapper{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+/* Paper Note Beside Review */
+.review-side-note{
+  background:#c8a06d;
+  color:#2a1a0f;
+  padding:35px 25px;
+  font-family:'Great Vibes', cursive;
+  font-size:2.1rem;
+  line-height:1.6;
+  text-align:center;
+  border-radius:6px;
+  box-shadow:0 12px 25px rgba(0,0,0,.35);
+  transform:rotate(-2deg);
+  position:relative;
+}
+
+/* Torn paper edges */
+.review-side-note:before,
+.review-side-note:after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:100%;
+  height:18px;
+  background:inherit;
+}
+
+.review-side-note:before{
+  top:-8px;
+  clip-path:polygon(0 100%,8% 0,16% 100%,24% 0,32% 100%,40% 0,48% 100%,56% 0,64% 100%,72% 0,80% 100%,88% 0,100% 100%);
+}
+
+.review-side-note:after{
+  bottom:-8px;
+  clip-path:polygon(0 0,8% 100%,16% 0,24% 100%,32% 0,40% 100%,48% 0,56% 100%,64% 0,72% 100%,80% 0,88% 100%,100% 0);
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .review-wrapper{
+    grid-template-columns:1fr;
+  }
+
+  .review-side-note{
+    font-size:1.6rem;
+    margin-top:20px;
+  }
+}
+
+
+.buy-book-wrap{
+  display:flex;
+  justify-content:center;   /* centers book + note group */
+  align-items:flex-end;
+  gap:32px;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+.signed-note-card{
+  position:relative;
+  margin:0;
+  transform:rotate(-4deg);
+}
+
+/* If note is alone above section */
+.buy-note-center{
+  display:flex;
+  justify-content:center;
+  width:100%;
+  margin:0 auto 30px;
+}
+/* Note Card */
+.signed-note-card{
+  width:220px;
+  min-height:240px;
+  background:#e4c79e;
+  color:#24160d;
+  padding:22px 18px;
+  box-shadow:0 14px 28px rgba(0,0,0,.35);
+  transform:rotate(-6deg);
+  border:1px solid rgba(90,60,30,.18);
+  position:relative;
+}
+
+/* Handwritten text */
+.note-lines{
+  font-family:'Great Vibes', cursive;
+  font-size:2rem;
+  line-height:1.35;
+  margin:0;
+}
+
+.note-sign{
+  margin-top:22px;
+  font-family:'Great Vibes', cursive;
+  font-size:2.2rem;
+  text-align:center;
+}
+
+/* subtle paper texture feel */
+.signed-note-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at top left, rgba(255,255,255,.12), transparent 35%);
+  pointer-events:none;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .buy-book-wrap{
+    justify-content:center;
+  }
+
+  .signed-note-card{
+    width:190px;
+    min-height:210px;
+    transform:rotate(-3deg);
+  }
+
+  .note-lines{
+    font-size:1.6rem;
+  }
+
+  .note-sign{
+    font-size:1.8rem;
+  }
+}
+
+/* =========================
+CSS
+========================= */
+
+.buy-section{
+  padding:80px 20px;
+  background:#050505;
+  color:#fff;
+}
+
+.buy-box{
+  max-width:1200px;
+  margin:auto;
+}
+
+.buy-title{
+  text-align:center;
+  font-size:3rem;
+  color:#d4a24d;
+  font-family:'Cinzel', serif;
+}
+
+.buy-sub{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:40px;
+  font-family:'Great Vibes',cursive;
+  color:#d4a24d;
+}
+
+.order-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.book-side{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.book-img{
+  width:320px;
+  max-width:100%;
+}
+
+.signed-note-card{
+  background:#e4c79e;
+  color:#24160d;
+  padding:20px;
+  width:220px;
+  transform:rotate(-5deg);
+  text-align:center;
+  font-family:'Great Vibes', cursive;
+  font-size:2rem;
+}
+
+.signed-note-card h4{
+  margin-top:15px;
+  font-size:2.1rem;
+}
+
+.payment-card{
+  border:1px solid rgba(212,162,77,.25);
+  padding:30px;
+  border-radius:12px;
+  background:rgba(255,255,255,.02);
+}
+
+.payment-card input,
+.payment-card textarea{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  background:#111;
+  border:1px solid #333;
+  color:#fff;
+}
+
+.payment-card textarea{
+  min-height:110px;
+}
+
+.qty-row{
+  margin:10px 0;
+}
+
+.total-box{
+  font-size:1.4rem;
+  margin:15px 0;
+  color:#d4a24d;
+}
+
+.buy-btn{
+  width:100%;
+  padding:16px;
+  background:#d4a24d;
+  color:#111;
+  border:none;
+  font-size:1.1rem;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.buy-btn:hover{
+  opacity:.9;
+}
+
+@media(max-width:900px){
+  .order-grid{
+    grid-template-columns:1fr;
+  }
+
+  .buy-title{
+    font-size:2.2rem;
+  }
+}
